@@ -28,19 +28,19 @@
 </head>
 <body>
 <!--header-->
-<header>
-    <div>
-        <img th:src="@{/images/favicon.ico}" alt="Logo">
-        <h1><a th:href="@{/}"> a soo's tale</a></h1>
+<header class="header ">
+    <div class="header__logo">
+        <img class="header__logo__img" th:src="@{/images/favicon.ico}" alt="Logo">
+        <h1 class="header__logo__title"><a th:href="@{/}"> a soo's tale</a></h1>
     </div>
     <nav>
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#work">MY WORK</a></li>
-            <li><a href="#testimonial">추천서</a></li>
-            <li><a href="#contact">CONTACT ME</a></li>
+        <ul class="header__menu">
+            <li><a class="header__menu__item active" href="#home">HOME</a></li>
+            <li><a class="header__menu__item" href="#about">ABOUT</a></li>
+            <li><a class="header__menu__item" href="#skills">SKILLS</a></li>
+            <li><a class="header__menu__item" href="#work">MY WORK</a></li>
+            <li><a class="header__menu__item" href="#testimonial">추천서</a></li>
+            <li><a class="header__menu__item" href="#contact">CONTACT ME</a></li>
         </ul>
 
     </nav>
