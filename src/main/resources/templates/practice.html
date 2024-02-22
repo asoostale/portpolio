@@ -56,104 +56,98 @@
         <a class="home__contact" href="#contact">contact me</a>
     </section>
     <!--about-->
-    <section id="about" class="section">
+    <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
-        <p class="description">늦은 나이지만 노력하는 개발자 지망생입니다.</p>
-        <ul>
-            <i class="fa-brands fa-java"></i>
-            <p>back-end</p>
-            <p></p>
-            <li>
-                <i class="fa-brands fa-html5"></i>
-                <p> 스프링</p>
-                <p>부트, JPA, QueryDSL</p>
+        <p class="description">
+            늦은 나이지만 노력하는 개발자 지망생입니다.
+        </p>
+        <ul class="majors">
+            <li class="major">
+                <i class="fa-brands fa-java major__icon"></i>
+                <p class="major__title">front-end</p>
+                <p>HTML,CSS, JAVASCRIPT, TYPESCRIPT, REACT, VUE</p>
             </li>
-            <li>
-                <i class="fa-brands fa-js"></i>
-                <p>front-end</p>
+            <li class="major">
+                <i class="fa-brands fa-html5 major__icon"></i>
+                <p class="major__title"> MOBILE</p>
+                <p>Android, ios, react native, flutter, java, swift, kotlin</p>
+            </li>
+            <li class="major">
+                <i class="fa-brands fa-js major__icon"></i>
+                <p class="major__title">back-end</p>
+                <p>java, javascript, go, nodeJs, rest apis, graphQl</p>
             </li>
         </ul>
-        <ul>
-            <li><i class="fa-brands fa-github" alt="깃헙"></i>
-                <div>
-                    <p>2019년 ~ 2022년</p>
-                </div>
-            </li>
 
-            <li><i class="fa-brands fa-apple" alt="애플"></i>
-                <div>
-                    <p>2022 ~ 지금</p>
-                </div>
-            </li>
-        </ul>
     </section>
     <!--skills-->
     <section id="skills" class="section">
-        <h2 class="title">Skill</h2>
-        <p class="description">skill & attribute</p>
-        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.</p>
-        <div>
-            <section>
-                <h3>코딩 스킬</h3>
-                <ul>
-                    <li>
-                        <div><span>HTML</span><span>30%</span></div>
-                        <div>
-                            <div style="width: 30%"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div><span>CSS</span><span>10%</span></div>
-                        <div>
-                            <div style="width: 10%"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div><span>SpringBoot</span><span>80%</span></div>
-                        <div>
-                            <div style="width: 80%"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div><span>JPA</span><span>80%</span></div>
-                        <div>
-                            <div style="width: 80%"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div><span>Javascript</span><span>20%</span></div>
-                        <div>
-                            <div style="width: 20%"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div><span>QueryDsl</span><span>60%</span></div>
-                        <div>
-                            <div style="width: 60%"></div>
-                        </div>
-                    </li>
-                </ul>
+        <div class="max-container"><h2 class="title">My Skill</h2>
+            <p class="description">skill & attribute</p>
+            <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.</p>
+            <div class="skills">
+                <section class="skills__coding">
+                    <h3 class="skills__title">Coding skills</h3>
+                    <ul>
+                        <li class="bar">
+                            <div class="bar__metadata"><span>HTML</span><span>30%</span></div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 30%"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata"><span>CSS</span><span>10%</span></div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 10%"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata"><span>SpringBoot</span><span>80%</span></div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata"><span>JPA</span><span>80%</span></div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata"><span>Javascript</span><span>20%</span></div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 20%"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata"><span>QueryDsl</span><span>60%</span></div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 60%"></div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
 
-            </section>
-            <section>
-                <h3>사용 툴</h3>
-                <ul>
-                    <li>인텔리제이</li>
-                    <li>깃</li>
-                    <li>dbgrip</li>
-                    <li>postman</li>
-                    <li>vue</li>
-                </ul>
-            </section>
-            <section>
-                <h3>etc</h3>
-                <ul>
-                    <li>git</li>
-                    <li>jpa</li>
-                    <li>축구</li>
-                </ul>
-            </section>
-        </div>
+    </section>
+    <section class="skills__tools">
+        <h3 class="skills__title">사용 툴</h3>
+        <ul>
+            <li>인텔리제이</li>
+            <li>깃</li>
+            <li>dbgrip</li>
+            <li>postman</li>
+            <li>vue</li>
+        </ul>
+    </section>
+    <section class="skills__etc">
+        <h3 class="skills_title">etc</h3>
+        <ul>
+            <li>git</li>
+            <li>jpa</li>
+            <li>축구</li>
+        </ul>
+    </section>
+    </div>
     </section>
     <!--work-->
     <section id="work" class="section">
