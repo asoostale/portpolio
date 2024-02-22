@@ -50,15 +50,15 @@
 <main>
     <!--Home-->
     <section id="home">
-        <img th:src="@{/images/main.png}" alt="main photo"/>
-        <h2>꿈꾸는 개발자 지망생입니다.</h2>
-        <p>공부하는 개발자</p>
-        <a href="#contact">contact me</a>
+        <img class="home__avatar" th:src="@{/images/main.png}" alt="main photo"/><br>
+        <h2 class="home__title"><strong class="home__title--strong"> Hello! World!</strong></h2>
+        <p class="home__description">공부하는 개발자</p>
+        <a class="home__contact" href="#contact">contact me</a>
     </section>
     <!--about-->
-    <section id="about">
-        <h2>About me</h2>
-        <p>늦은 나이지만 노력하는 개발자 지망생입니다.</p>
+    <section id="about" class="section">
+        <h2 class="title">About me</h2>
+        <p class="description">늦은 나이지만 노력하는 개발자 지망생입니다.</p>
         <ul>
             <i class="fa-brands fa-java"></i>
             <p>back-end</p>
@@ -88,9 +88,9 @@
         </ul>
     </section>
     <!--skills-->
-    <section id="skills">
-        <h2>Skill</h2>
-        <p>skill & attribute</p>
+    <section id="skills" class="section">
+        <h2 class="title">Skill</h2>
+        <p class="description">skill & attribute</p>
         <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.</p>
         <div>
             <section>
@@ -156,9 +156,9 @@
         </div>
     </section>
     <!--work-->
-    <section id="work">
-        <h2>My work</h2>
-        <p>Projects</p>
+    <section id="work" class="section">
+        <h2 class="title">My work</h2>
+        <p class="description">Projects</p>
         <ul>
             <li>
                 <button>All<span>8</span></button>
@@ -234,9 +234,9 @@
 
     </section>
     <!--추천서-->
-    <section id="testimonial">
-        <h2>Testimonial</h2>
-        <p>See what thye see about me</p>
+    <section id="testimonial" class="section">
+        <h2 class="title">Testimonial</h2>
+        <p class="description">See what thye see about me</p>
         <ul>
             <li><img src="/images/testimonials/people1.webp" alt="사람1">
                 <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi asperiores assumenda
@@ -266,8 +266,8 @@
 
 <!--footer-->
 <footer id="contact">
-    <h2>Let&#39;s talk</h2>
-    <p>asoostale@naver.com</p>
+    <h2 class="title">Let&#39;s talk</h2>
+    <p class="description">asoostale@naver.com</p>
     <ul>
         <li>
             <a href="https://github.com/asoostale" target="_blank" title="my git">
