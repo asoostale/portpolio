@@ -58,6 +58,7 @@ button:focus {
 .max-container {
     max-width: 1200px;
     margin: auto;
+
 }
 
 .title {
@@ -243,14 +244,14 @@ button:focus {
     font-size: 1.2rem;
 }
 
-.bar{
+.bar {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     gap: 0.5rem;
 }
 
-.bar__metadata{
+.bar__metadata {
     display: flex;
     justify-content: space-between;
 }
@@ -261,7 +262,7 @@ button:focus {
     background-color: var(--color-primary-variant);
 }
 
-.bar__value{
+.bar__value {
     background-color: var(--color-accent);
     height: 3px;
 }
@@ -279,7 +280,8 @@ button:focus {
     margin: 2.5rem;
     gap: 1rem;
 }
-.category{
+
+.category {
     position: relative;
     color: var(--color-text);
     font-size: 1.1rem;
@@ -290,6 +292,7 @@ button:focus {
     white-space: nowrap;
 
 }
+
 .category--selected {
     background-color: var(--color-accent);
     color: var(--color-primary);
@@ -306,12 +309,12 @@ button:focus {
     line-height: 28px;
     border-radius: 100%;
     background-color: var(--color-orange);
-    color:var(--color-text);
+    color: var(--color-text);
     transition: all 150ms ease-in;
 }
 
 .category--selected .category__count,
-.category:hover .category__count{
+.category:hover .category__count {
     opacity: 1;
     top: 0;
 }
@@ -324,7 +327,7 @@ button:focus {
     gap: 1rem;
 }
 
-.project{
+.project {
     position: relative;
     border-radius: 8px;
 
@@ -381,4 +384,90 @@ button:focus {
     width: 50px;
     height: 2px;
     background-color: var(--color-accent);
+}
+
+/*Testimonial*/
+.testimonial {
+    margin: 3rem;
+
+}
+
+.testimonial {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/*몇번째인지 선택(even=짝수) 그안의 img태그*/
+.testimonial:nth-child(even).testimonial__img {
+    order: 1;
+}
+
+.testimonial__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(0, 98, 90, 0.3), 15px 15px rgba(0, 98, 90, 0.2), 20px 20px rgba(0, 98, 90, 0.1), 25px 25px rgba(0, 98, 90, 0.05);
+}
+
+.testimonial__bubble {
+    box-shadow: rgba(13, 38, 76, 0.19) 0px 9px 20px;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.testimonial__bubble__name {
+    color: var(--color-accent);
+    font-weight: bold;
+    filter: brightness(70%);
+}
+
+/*Arrow UP*/
+.arrow-up {
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--color-accent);
+}
+
+
+/*FOOTER*/
+#contact {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.contact__links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.contact__link {
+    transition: color 250ms ease-in;
+
+
+}
+
+.contact__link:hover {
+    color: var(--color-accent);
+}
+
+.footer__description {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.footer__title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
 }

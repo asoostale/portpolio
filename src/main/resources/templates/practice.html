@@ -235,53 +235,75 @@
         </div>
     </section>
     <!--추천서-->
-    <section id="testimonial" class="section">
+    <section id="testimonial" class="section max-container">
         <h2 class="title">Testimonial</h2>
-        <p class="description">See what thye see about me</p>
-        <ul>
-            <li><img src="/images/testimonials/people1.webp" alt="사람1">
-                <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi asperiores assumenda
-                    atque deleniti dignissimos dolore dolorem earum expedita fugit ipsam ipsum libero minus, odit optio
-                    quasi repudiandae saepe sit!</p>
-                    <p>이순신</p></div>
+        <p class="description">See what they see about me</p>
+        <ul class="testimonials">
+            <li class="testimonial"><img src="/images/testimonials/people1.webp" class="testimonial__img" alt="사람1">
+                <div class="testimonial__bubble">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                        animi asperiores assumenda
+                        atque deleniti dignissimos dolore dolorem earum expedita fugit ipsam ipsum libero minus, odit
+                        optio
+                        quasi repudiandae saepe sit!
+                    </p>
+                    <p><a href="#" class="testimonial__bubble__name"/>이순신</p>
+                </div>
             </li>
-            <li><img src="/images/testimonials/people2.webp" alt="사람2">
-                <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid animi autem dicta
-                    earum, eveniet explicabo labore minus molestiae mollitia quisquam quod sint sit soluta tempore
-                    veniam vitae voluptate voluptatum?</p>
-                    <p>홍길동</p></div>
+            <li class="testimonial"><img src="/images/testimonials/people2.webp" class="testimonial__img" alt="사람2">
+                <div class="testimonial__bubble">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                        aliquid animi autem dicta
+                        earum, eveniet explicabo labore minus molestiae mollitia quisquam quod sint sit soluta tempore
+                        veniam vitae voluptate voluptatum?</p>
+                    <p>
+                        <a href="#" class="testimonial__bubble__name"/>홍길동</p>
+                </div>
             </li>
-            <li><img src="/images/testimonials/people3.webp" alt="사람3">
-                <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis dolorem dolores
-                    eius eum ex expedita, inventore laboriosam laborum maxime nam nobis non odio perferendis
-                    perspiciatis qui quo recusandae reprehenderit!</p>
-                    <p>둘리</p></div>
+            <li class="testimonial"><img src="/images/testimonials/people3.webp" class="testimonial__img" alt="사람3">
+                <div class="testimonial__bubble">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                        blanditiis dolorem dolores
+                        eius eum ex expedita, inventore laboriosam laborum maxime nam nobis non odio perferendis
+                        perspiciatis qui quo recusandae reprehenderit!</p>
+                    <p>
+                        <a href="#" class="testimonial__bubble__name"/>둘리</p>
+                </div>
             </li>
         </ul>
     </section>
     <!--Arrow Up-->
     <aside>
-        <a href="#home" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        <a class="arrow-up" href="#home" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
     </aside>
 </main>
 
 <!--footer-->
 <footer id="contact">
-    <h2 class="title">Let&#39;s talk</h2>
-    <p class="description">asoostale@naver.com</p>
-    <ul>
-        <li>
-            <a href="https://github.com/asoostale" target="_blank" title="my git">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/asoostale" target="_blank" title="my linked">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-        </li>
-    </ul>
-    <p>©asoostale - All rights reserved</p>
+    <div class="max-container">
+        <div class="footer">
+            <h2 class="footer__title">Let&#39;s talk</h2>
+            <p class="footer__description">asoostale@naver.com</p>
+        </div>
+        <ul class="contact__links">
+            <li>
+                <a class="contact__link"
+                   href="https://github.com/asoostale" target="_blank" title="my git">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a class="contact__link"
+                   href="https://github.com/asoostale" target="_blank" title="my linked">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <p>©asoostale - All rights reserved</p>
+    </div>
 </footer>
 
 
