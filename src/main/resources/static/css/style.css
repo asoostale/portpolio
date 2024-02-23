@@ -126,6 +126,8 @@ button:focus {
 .header__menu__item {
     /*위아래, 양옆*/
     padding: 8px 16px;
+    display: block;
+    border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
@@ -342,6 +344,12 @@ button:focus {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
+    transition: all 250ms ease-out;
+}
+
+.projects.anim-out {
+    opacity: 0;
+    transform: scale(0.96) translateY(20px);
 }
 
 .project {

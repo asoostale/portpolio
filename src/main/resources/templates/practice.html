@@ -24,7 +24,8 @@
     <!--아이콘사용 fontAwesome-->
     <script src="https://kit.fontawesome.com/c7391397c1.js" crossorigin="anonymous"></script>
     <!--defer 옵션 중요. 안 읽어도 사용자에게 보여줄 수 있다-->
-    <script src="/js/main.js" defer></script>
+    <script type="module" src="/js/main.js" defer></script>
+    <script type="module" src="/js/projects.js" defer></script>
 </head>
 <body>
 <!--header-->
@@ -43,7 +44,7 @@
             <li><a class="header__menu__item" href="#contact">CONTACT ME</a></li>
         </ul>
     </nav>
-    <button class="header__toggle" aria-label="navigation menu toggle" >
+    <button class="header__toggle" aria-label="navigation menu toggle">
         <i class="fa-solid fa-bars"></i>
     </button>
 </header>
@@ -162,20 +163,24 @@
             <p class="description">Projects</p>
             <ul class="categories">
                 <li>
-                    <button class="category category--selected">All<span class="category__count">8</span></button>
+                    <button class="category category--selected" data-category="all">
+                        All<span class="category__count">8</span></button>
                 </li>
                 <li>
-                    <button class="category">front-end<span class="category__count">3</span></button>
+                    <button class="category" data-category="front-end">
+                        front-end<span class="category__count">3</span></button>
                 </li>
                 <li>
-                    <button class="category">back-end<span class="category__count">3</span></button>
+                    <button class="category" data-category="back-end">
+                        back-end<span class="category__count">3</span></button>
                 </li>
                 <li>
-                    <button class="category">mobile<span class="category__count">2</span></button>
+                    <button class="category" data-category="mobile">
+                        mobile<span class="category__count">2</span></button>
                 </li>
             </ul>
             <ul class="projects">
-                <li class="project">
+                <li class="project" data-type="front-end">
                     <a href="#" target="_blank">
                         <img src="/images/projects/project1.webp" class="project__img" alt="손흥민"/>
                         <div class="project__metadata">
@@ -184,49 +189,49 @@
                         </div>
                     </a>
                 </li>
-                <li class="project"><a href="#" target="_blank"><a href="#" target="_blank">
+                <li class="project" data-type="front-end"><a href="#" target="_blank"><a href="#" target="_blank">
                     <img src="/images/projects/project2.webp" class="project__img" alt="손흥민"/>
                     <div class="project__metadata">
                         <h3 class="project__title">Project #2</h3>
                         <p> 손흥민 갓</p>
                     </div>
                 </a></a></li>
-                <li class="project"><a href="#" target="_blank"><a href="#" target="_blank">
+                <li class="project" data-type="back-end"><a href="#" target="_blank"><a href="#" target="_blank">
                     <img src="/images/projects/project3.webp" class="project__img" alt="project3"/>
                     <div class="project__metadata">
                         <h3 class="project__title">Project #3</h3>
                         <p> 손흥민 갓</p>
                     </div>
                 </a></a></li>
-                <li class="project"><a href="#" target="_blank"><a href="#" target="_blank">
+                <li class="project" data-type="back-end"><a href="#" target="_blank"><a href="#" target="_blank">
                     <img src="/images/projects/project4.webp" class="project__img" alt="project4"/>
                     <div class="project__metadata">
                         <h3 class="project__title">Project #4</h3>
                         <p> 손흥민 갓</p>
                     </div>
                 </a></a></li>
-                <li class="project"><a href="#" target="_blank"><a href="#" target="_blank">
+                <li class="project" data-type="front-end"><a href="#" target="_blank"><a href="#" target="_blank">
                     <img src="/images/projects/project5.webp" class="project__img" alt="project5"/>
                     <div class="project__metadata">
                         <h3 class="project__title">Project #5</h3>
                         <p> 손흥민 갓</p>
                     </div>
                 </a></a></li>
-                <li class="project"><a href="#" target="_blank"><a href="#" target="_blank">
+                <li class="project" data-type="back-end"><a href="#" target="_blank"><a href="#" target="_blank">
                     <img src="/images/projects/project6.webp" class="project__img" alt="project6"/>
                     <div class="project__metadata">
                         <h3 class="project__title">Project #6</h3>
                         <p> 손흥민 갓</p>
                     </div>
                 </a></a></li>
-                <li class="project"><a href="#" target="_blank"><a href="#" target="_blank">
+                <li class="project" data-type="mobile"><a href="#" target="_blank"><a href="#" target="_blank">
                     <img src="/images/projects/project7.webp" class="project__img" alt="project7"/>
                     <div class="project__metadata">
                         <h3 class="project__title">Project #7</h3>
                         <p> 손흥민 갓</p>
                     </div>
                 </a></a></li>
-                <li class="project"><a href="#" target="_blank"><a href="#" target="_blank">
+                <li class="project" data-type="back-end"><a href="#" target="_blank"><a href="#" target="_blank">
                     <img src="/images/projects/project8.webp" class="project__img" alt="project8"/>
                     <div class="project__metadata">
                         <h3 class="project__title">Project #8</h3>
@@ -282,7 +287,7 @@
     </section>
     <!--Arrow Up-->
     <aside>
-            <a class="arrow-up" href="#home" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        <a class="arrow-up" href="#home" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
     </aside>
 </main>
 
