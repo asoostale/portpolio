@@ -315,3 +315,70 @@ button:focus {
     opacity: 1;
     top: 0;
 }
+
+.projects {
+    display: grid;
+    /*1배율로 4번 반복*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.project{
+    position: relative;
+    border-radius: 8px;
+
+    /*안에 있는 이미지가 삐져 나오지 않도록*/
+    overflow: hidden;
+
+}
+
+.project__img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.project__metadata {
+    /*위에 .project 클래스 포지션을
+    position: relative; 로 선언해줘야 한다.*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    /*은은하게*/
+    opacity: 0;
+    /*수평정렬*/
+    display: flex;
+    flex-direction: column;
+    /*텍스트를 심플하게 중간정렬*/
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 250ms ease-in;
+    /*스르륵 내려오는 효과*/
+    transform: translateY(-10px);
+}
+
+.project__metadata:hover {
+    opacity: 0.8;
+    /*스르륵 내려오는 효과*/
+    transform: translateY(0px);
+}
+
+/*가상요소 추가*/
+/*형광 바를 html에 추가하지 않았는데 추가되 있는 것을*/
+/*볼 수 있음.*/
+/*자유게시판 밑에 밑줄 긋는 효과 사용 가능*/
+.project__title:after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0.5rem 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-accent);
+}
