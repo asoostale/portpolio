@@ -31,7 +31,7 @@
 <header class="header ">
     <div class="header__logo">
         <img class="header__logo__img" th:src="@{/images/favicon.ico}" alt="Logo">
-        <h1 class="header__logo__title"><a th:href="@{/}"> a soo's tale</a></h1>
+        <h1 class="header__logo__title"><a href="https://github.com/asoostale"> a soo's tale</a></h1>
     </div>
     <nav class="header__nav">
         <ul class="header__menu">
@@ -42,8 +42,10 @@
             <li><a class="header__menu__item" href="#testimonial">추천서</a></li>
             <li><a class="header__menu__item" href="#contact">CONTACT ME</a></li>
         </ul>
-
     </nav>
+    <button class="header__toggle" aria-label="navigation menu toggle" >
+        <i class="fa-solid fa-bars"></i>
+    </button>
 </header>
 
 <!--main-->
