@@ -50,12 +50,15 @@
 <main>
     <!--Home-->
     <section id="home">
-        <img class="home__avatar" th:src="@{/images/main.png}" alt="main photo"/><br>
-        <h2 class="home__title"><strong class="home__title--strong"> Hello! World!</strong></h2>
-        <p class="home__description">공부하는 개발자</p>
-        <a class="home__contact" href="#contact">contact me</a>
+        <div class="home__container">
+            <img class="home__avatar" th:src="@{/images/main.png}" alt="main photo"/><br>
+            <h2 class="home__title"><strong class="home__title--strong"> Hello! World!</strong></h2>
+            <p class="home__description">공부하는 개발자</p>
+            <a class="home__contact" href="#contact">contact me</a>
+        </div>
     </section>
-    <!--about-->
+
+    <!-- about -->
     <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
         <p class="description">
@@ -69,7 +72,7 @@
             </li>
             <li class="major">
                 <i class="fa-brands fa-html5 major__icon"></i>
-                <p class="major__title"> MOBILE</p>
+                <p class="major__title">MOBILE</p>
                 <p>Android, ios, react native, flutter, java, swift, kotlin</p>
             </li>
             <li class="major">
@@ -78,8 +81,8 @@
                 <p>java, javascript, go, nodeJs, rest apis, graphQl</p>
             </li>
         </ul>
-
     </section>
+
     <!--skills-->
     <section id="skills" class="section">
         <div class="max-container">
@@ -277,7 +280,7 @@
     </section>
     <!--Arrow Up-->
     <aside>
-        <a class="arrow-up" href="#home" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+            <a class="arrow-up" href="#home" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
     </aside>
 </main>
 
