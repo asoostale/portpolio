@@ -8,6 +8,6 @@ public class Portfolio {
 
     @GetMapping("/")
     public String form() {
-        return "/practice";
+        return "index";
     }
 }
